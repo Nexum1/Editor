@@ -115,6 +115,7 @@ import { WebpackProgressExtension } from "./extensions/webpack-progress";
 
 // Json
 import layoutConfiguration from "./layout.json";
+import { FileAssets } from "./assets/files";
 
 export interface ILayoutTabNodeConfiguration {
     /**
@@ -347,6 +348,7 @@ export class Editor {
         MaterialAssets.Register();
         TextureAssets.Register();
         SoundAssets.Register();
+        FileAssets.Register();
         ScriptAssets.Register();
         GraphAssets.Register();
         PrefabAssets.Register();
